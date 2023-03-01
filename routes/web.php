@@ -12,10 +12,13 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+require __DIR__ . '/auth.php';
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [\App\Http\Controllers\IndexController::class, 'index']);
+
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 Route::get('/dbTest', function () {
     return view('dbTest');

@@ -1,0 +1,45 @@
+*:focus {
+  outline: none;
+}
+
+form {
+}
+
+.input {
+  padding-bottom: $gap;
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: $gap/2;
+  }
+  small {
+    color: #3A3A3A;
+    font-size: 12px;
+    display: block;
+    margin-top: $gap/2;
+  }
+  p.description {
+    color: #3A3A3A;
+    font-size: 14px;
+    display: block;
+    margin-bottom: $gap/2;
+  }
+}
+
+input[type='text'],
+input[type='password'],
+input[type='number'],
+input[type='email'],
+select {
+  stroke: none;
+  border: $input-border;
+  padding: $gap/3;
+
+  &:active,
+  &:focus {
+    outline: 3px solid lighten($color-brand-primary, 50%) !important;
+    border-color: $color-brand-primary;
+
+  }
+
+}

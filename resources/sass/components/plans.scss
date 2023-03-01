@@ -1,0 +1,120 @@
+.plans{
+  display: flex;
+  flex-direction: column;
+  max-width: 485px;
+  width: 100%;
+  .plans-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: $gap;
+    h2{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 44px;
+    }
+    .plans_btn{
+      display: flex;
+      a{
+        background: none;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+        &:hover{
+          color: $color-brand-primary;
+        }
+      }
+      .archor-active{
+        color: $color-brand-primary;
+      }
+    }
+  }
+  .plans-title{
+    display: flex;
+    flex-direction: column;
+    input[type="radio"]{-webkit-appearance:radio}
+    .plan{
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      background: #FFFFFF;
+      border: $modal-border;
+      border-radius: $modal-border-radius;
+      margin-bottom: $gap*1.5;
+      cursor: pointer;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      .plan-info{
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        .plan-store{
+          display: flex;
+          flex-direction: column;
+          margin-left: $gap;
+          h2{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: $gap/2;
+          }
+          div{
+            display: flex;
+            flex-wrap: wrap;
+            span{
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 17px;
+              &:first-child{
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+        .plan-price{
+          display: flex;
+          align-items: center;
+          margin-left: auto;
+          max-width: 130px;
+          width: 100%;
+          span{
+            display: flex;
+            align-items: center;
+            font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 24px;
+              &:first-child{
+                max-width: 50px;
+                width: 100%;
+                justify-content: end;
+              }
+              &:last-child{
+                margin-left: $gap/4;
+              }
+              
+          }
+          
+        }
+      }
+      
+      @media all and (max-width: 700px) {
+          .plan-price{
+            margin: 0;
+          }
+          .plan-store{
+            flex-wrap: wrap;
+            div{
+              flex-wrap: wrap;
+            }
+          }
+      }
+    }
+    .plan-active{
+      border: 1px solid $color-brand-primary;
+    }
+  }
+}

@@ -44,7 +44,7 @@ sketch
 
 
 composer.phar
-composer.lock
+composerOLD.lock
 .DS_Store
 Thumbs.db
 /phpunit.xml

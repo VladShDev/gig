@@ -1,0 +1,35 @@
+$color-brand-primary: #0081CA;
+$primary-button-color: $color-brand-primary;
+
+$gap: 20px;
+
+$primary-button-color: #0081CA;
+
+$border-color: #E1E1E1;
+
+
+$border-radius-base: 10px;
+$border-radius-small: 5px;
+
+$modal-border: 1px solid #8d8d8d;
+$modal-border-radius: $border-radius-base;
+$modal-box-shadow: 0px 0px 30px #7a7a7a;
+
+$input-border: 1px solid $border-color;
+
+
+
+/**
+ Flash Messages Variables
+ */
+$flash-message-info-color: #19375D;
+$flash-message-info-background: lighten($flash-message-info-color, 60%);
+
+$flash-message-error-color: #5f0400;
+$flash-message-error-background: lighten($flash-message-error-color, 60%);
+
+$flash-message-success-color: #133B12;
+$flash-message-success-background: lighten($flash-message-success-color, 60%);
+
+
+

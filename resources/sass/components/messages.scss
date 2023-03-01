@@ -1,0 +1,30 @@
+.flash-messages {
+  margin-bottom: $gap/2;
+  border-radius: 3px;
+  > div {
+    font-weight: bold;
+    margin-bottom: $gap/3;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    padding: 10px;
+    margin: 0;
+
+    li {
+    }
+  }
+  &.info {
+    background: $flash-message-info-background;
+    color: $flash-message-info-color;
+  }
+  &.error {
+    background: $flash-message-error-background;
+    color: $flash-message-error-color;
+  }
+
+  &.success {
+    background: $flash-message-success-background;
+    color: $flash-message-success-color;
+  }
+}

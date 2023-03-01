@@ -1,0 +1,28 @@
+.settings {
+
+  .tabs.vertical {
+    > .tab-content {
+      width: 100%;
+    }
+  }
+
+  .group {
+    .name {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .content {
+      border-top: 1px solid $border-color;
+      margin-top: $gap/2;
+      padding-top: $gap/2;
+      padding: $gap/1;
+    }
+  }
+
+  > .tabs.horizontal {
+    .tab-content {
+      padding: $gap;
+    }
+  }
+}
